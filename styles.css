@@ -8,11 +8,11 @@
     width: calc(100% / 10);
     height: calc(100% / 10);
     aspect-ratio: 1/1;
-    border: 1px solid lightblue;
+    border: 1px solid lightseagreen;
     
 }
 .squareon{
-    background-color: lightseagreen;
+    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
