@@ -9,7 +9,7 @@ let button = document.getElementById('startbutton')
 button.addEventListener('click', function(){
         
     let choice = parseInt(document.getElementById("choice").value)
-    console.log(choice);
+    
     let mainsquare = document.getElementById('mainsquare')
 
     if(choice === 1){
