@@ -1,29 +1,27 @@
+function createLittleSq (){     
+    const square = document.createElement("div");
+    square.className = 'littlesquare'
+    return square        
+}
+
 let button = document.getElementById('startbutton')
 
 button.addEventListener('click', function(){
-     document.getElementById('mainsquare').classList.toggle('d-none')    
+    //  document.getElementById('mainsquare').classList.toggle('d-none')
+    let mainsquare = document.getElementById('mainsquare')
+
+    for (let i = 1; i<= 100; i++){
+        let littlesq = createLittleSq();
+        mainsquare.appendChild(littlesq);
+        littlesq.addEventListener('click', function(){
+            littlesq.classList.add('squareon')
+            let number = createElement("div");
+
+            console.log('Hai cliccato la cella n.', i)
+            
+        })
+    }
+    
+    
 })
 
-for (index = 0; index < 100; index++){
-    const square = document.createElement("div");
-    square.className = 'littlesquare'
-    document.getElementById('mainsquare').appendChild(square)
-}
-
-
-document.addEventListener('click', function(){
-    let prova = document.getElementsByClassName('littlesquare');
-    prova.classList.toggle('bg-black')
-})
-
-
-
-
-
-    function createHundredSq (){
-    for (index = 0; index < 5; index++){
-      const square = document.createElement("div");
-      square.className = 'littlesquare'
-      console.log(square)
-    } return
-}
