@@ -7,13 +7,12 @@ function createLittleSq (){
 let button = document.getElementById('startbutton')
 
 button.addEventListener('click', function(){
-    document.getElementById('mainsquare').classList.toggle('d-none')
-    
+        
     let choice = parseInt(document.getElementById("choice").value)
-    console.log(choice)
-
+    console.log(choice);
     let mainsquare = document.getElementById('mainsquare')
-    if(choice ===1){
+
+    if(choice === 1){
         for (let i = 1; i<= 100; i++){
             let littlesq = createLittleSq();
             mainsquare.appendChild(littlesq);
@@ -31,6 +30,7 @@ button.addEventListener('click', function(){
         for (let i = 1; i<= 81; i++){
             let littlesq = createLittleSq();
             mainsquare.appendChild(littlesq);
+            littlesq.classList.add('ninesquare')
             littlesq.addEventListener('click', function(){
                 littlesq.classList.add('squareon')
                 const node = document.createElement("div");
@@ -41,10 +41,11 @@ button.addEventListener('click', function(){
                 
             }, {once : true})
         }
-    } else {
+    } if (choice === 3) {
         for (let i = 1; i<= 49; i++){
             let littlesq = createLittleSq();
             mainsquare.appendChild(littlesq);
+            littlesq.classList.add('sevensquare')
             littlesq.addEventListener('click', function(){
                 littlesq.classList.add('squareon')
                 const node = document.createElement("div");

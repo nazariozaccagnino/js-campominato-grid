@@ -18,3 +18,12 @@
     justify-content: center;
     font-weight: 700;
 }
+
+.ninesquare{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.sevensquare{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
